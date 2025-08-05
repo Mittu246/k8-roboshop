@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- # deployment labels
   name: mongodb
   labels: 
     component: mongodb
@@ -15,7 +14,6 @@ spec:
       project: roboshop
       tier: database
   template:
-    # this is pod definition
     metadata:
       labels:
         component: mongodb
