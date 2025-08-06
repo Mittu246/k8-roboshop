@@ -57,7 +57,7 @@ spec:
         - configMapRef:
             name: payment
         - secretRef:
-            nam: payment
+            name: payment
 ---
 apiVersion: v1 
 kind: Service
