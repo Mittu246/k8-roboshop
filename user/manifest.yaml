@@ -20,20 +20,20 @@ metadata:   # deployment labeles
   labels: 
     component: user
     project: roboshop
-    tier: database
+    tier: app
 spec:
   replicas: 1
   selector:
     matchLabels: 
       component: user
       project: roboshop
-      tier: database
+      tier: app
   template:   # this is pod definition
     metadata:
       labels:
         component: user
         project: roboshop
-        tier: database
+        tier: app
     spec:
       containers:
       - name: user
@@ -50,12 +50,12 @@ metadata:
   labels:
     component: user
     project: roboshop
-    tier: database
+    tier: app
 spec: 
   selector: 
     component: user
     project: roboshop
-    tier: database
+    tier: app
   ports: 
   - protocol: TCP
     port: 8080
