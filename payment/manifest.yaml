@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: payment
-        image: srikesh7117/payment:v1
+        image: joindevops/payment:v1
         envFrom:
         - configMapRef:
             name: payment
