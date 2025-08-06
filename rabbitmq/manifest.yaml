@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: rabbitmq
-        image: srikesh7117/rabbitmq:v1
+        image: rabbitmq:3
         envFrom: 
         - secretRef: 
             name: mysql
