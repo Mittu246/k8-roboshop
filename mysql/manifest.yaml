@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: srikesh7117/mysql:v1
+        image: joindevops/mysql:v1
         envFrom: 
         - secretRef: 
             name: mysql
